@@ -1,5 +1,8 @@
 # yamllint-github-action
 
+This project has been forked due to an apparent lack of maintenance upstream.
+We can pull in changes/switch back if the original starts patching again.
+
 Yamllint GitHub Actions allow you to execute `yamllint` command within GitHub Actions.
 
 The output of the actions can be viewed from the Actions tab in the main repository view. If the actions are executed on a pull request event, a comment may be posted on the pull request.
@@ -26,7 +29,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
       - name: 'Yamllint'
-        uses: karancode/yamllint-github-action@master
+        uses: broadinstitute/yamllint-github-action@main
         with:
           yamllint_file_or_dir: '<yaml_file_or_dir>'
           yamllint_strict: false
